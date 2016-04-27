@@ -197,7 +197,7 @@ public class DataPoint
             try( CloseableHttpResponse response = client.execute( new HttpGet( uri ) ) ) {
 
                 int returnCode = response.getStatusLine().getStatusCode();
-                LOG.log( Level.INFO, () -> "ReturnCode " + returnCode + ": " + response.getStatusLine().getReasonPhrase() );
+                LOG.log( Level.FINE, () -> "ReturnCode " + returnCode + ": " + response.getStatusLine().getReasonPhrase() );
 
                 switch( returnCode ) {
                     case 200:
@@ -255,7 +255,7 @@ public class DataPoint
             try( CloseableHttpResponse response = client.execute( new HttpGet( uri ) ) ) {
 
                 int returnCode = response.getStatusLine().getStatusCode();
-                LOG.log( Level.INFO, () -> "ReturnCode " + returnCode + ": " + response.getStatusLine().getReasonPhrase() );
+                LOG.log( Level.FINE, () -> "ReturnCode " + returnCode + ": " + response.getStatusLine().getReasonPhrase() );
 
                 switch( returnCode ) {
                     case 200:

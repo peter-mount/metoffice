@@ -77,7 +77,6 @@ public class ForecastImageLayerWS
     protected void extractPath( Request r )
             throws IOException
     {
-        System.out.println( "PathLength " + r.getPathLength() );
         switch( r.getPathLength() ) {
             // ../layer.json
             case 6: {
@@ -90,9 +89,7 @@ public class ForecastImageLayerWS
 
             // ../layer/time/timestep.fmt
             case 8:
-                System.out.printf( "path \"%s\" \"%s\" \"%s\"\n", r.getPath( 5 ), r.getPath( 6 ), r.getPath( 7 ) );
                 r.setAttribute( "path", forecastImageLayerService.getPath( r.getPath( 5 ), r.getPath( 6 ), r.getPath( 7 ) ) );
-                System.out.println( "path " + r.getAttribute( "path" ) );
                 break;
 
             default:

@@ -135,8 +135,6 @@ public class ForecastImageLayerService
 
         baseUrl = obj.getJsonObject( "BaseUrl" ).getString( "$" );
 
-        LOG.log( Level.INFO, () -> "BaseUrl: " + baseUrl );
-
         layers = obj.getJsonArray( "Layer" )
                 .stream()
                 .map( Functions.castTo( JsonObject.class ) )

@@ -35,13 +35,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         
-        <!--
         <dependency>
             <groupId>onl.area51.metoffice</groupId>
             <artifactId>metoffice-regionaltextfcst</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        -->
         
         <dependency>
             <groupId>onl.area51.filesystem</groupId>
